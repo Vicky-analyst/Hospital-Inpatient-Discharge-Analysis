@@ -37,3 +37,23 @@ The following tools were utilized to collect, manage, analyze, and visualize hos
   - Quick Measure
   - filters
   - Page Navigation
+
+### Data Cleaning
+The dataset used for this project was largely well-structured and complete, requiring minimal preprocessing. The primary data quality issue identified was the presence of duplicate records, which could distort counts, risk assessments, and cost analyses if left unaddressed. To ensure the integrity of the analysis, all duplicate rows were systematically identified and removed. No other modifications were necessary, preserving the integrity of the original hospital discharge data for analysis.
+
+```sql
+-- Cleaning Duplicate
+ALTER TABLE inpatient_discharges
+ADD COLUMN ID INT auto_increment primary KEY;
+WITH duplicates AS (
+					SELECT ID,
+							row_number() OVER(PARTITION BY `index` ORDER BY ID) AS Dup
+                    FROM inpatient_discharges
+                    )
+DELETE FROM inpatient_discharges
+WHERE ID IN (SELECT ID FROM duplicates WHERE Dup > 1);    
+
+ALTER TABLE inpatient_discharges
+DROP COLUMN ID;
+```
+
