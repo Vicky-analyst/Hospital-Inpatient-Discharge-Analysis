@@ -18,6 +18,7 @@ The dataset for this project was sourced from Kaggle, providing a comprehensive 
 - What is the distribution of APR (All Patient Refined) Risk of Mortality across different racial groups?
 - Which patient race is most associated with Extreme APR Risk of Mortality, what percentage of their admissions are classified as emergency visits, and how does this relate to their average length of stay?
 - Which ten counties account for the highest total hospital charges?
+- Identify the top 10 procedures contributing the most to total hospital charges?
 - Compare total charges by payment source to identify which payer types generate the most billing volume which is above avg
 
 ## Tools
@@ -111,3 +112,23 @@ DROP COLUMN ID;
 
     - **Prevalence of Chronic Illness**
       Counties like the Bronx have higher rates of diabetes, hypertension, asthma, and heart disease, increasing hospital admissions and costs.
+- **No Procedure, Resp intube/mech ventil** generate the highest total charges for both gender of over 1.2B 
+- **Medicare and Insurace** are the payment source above avg that generate the total charge reimburstment of over 4.8B among the top 5 source of payment by total charges
+
+  ### Data Visualization
+  The visualized Hospital Inpatient Discharges transforms raw patient records into clear, actionable insights using well-structured charts and interactive dashboards. Age groups, gender distribution, diagnoses, and procedures were visualized to highlight the most influential patterns in healthcare utilization. Bar charts and frequency plots were used to compare the top diagnosis categories across age brackets, revealing sharp diagnostic between pediatric, reproductive-age, and older adult populations. Procedure charts were paired with diagnosis visuals to show how clinical actions align with underlying medical conditions, offering a complete view of treatment pathways.
+
+A gender filter examined the relationship between gender and diagnosis prevalence. This allowed for a better medical comparison that clearly illustrated gender-specific healthcare needs. 
+All charts were designed to support diagnostic pattern recognition, guide interpretation, and help healthcare professionals quickly identify where clinical resources are most heavily utilized. The visualizations collectively create a coherent narrative that connects demographic trends, diagnosis frequencies, and procedure patterns in a way that is accessible, evidence-driven, and easy to communicate across both technical and clinical teams.
+
+**Hospital Inpatient Discharges Dashboard Dark Theme**
+![](Sales_Dashboard.png)
+
+**Hospital Inpatient Discharges Dashboard Light Theme**
+![](Sales_Dashboard.png)
+
+**To interacte with the Iowa Liquor Dashboard**
+[Click Here](https://app.powerbi.com/groups/me/reports/e624959d-f081-4204-8e99-48c7e5e7488a/8e1f17ee9c5d7d87a5d8?experience=power-bi)
+
+### Video Of This Project
+### [▶️ Watch Project Video on LinkedIn](https://www.linkedin.com/posts/victoryazubike_dataanalytics-dataprojects-datascience-activity-7355972871690633217-JMqm)
