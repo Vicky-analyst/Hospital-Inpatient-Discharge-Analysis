@@ -79,6 +79,10 @@ DROP COLUMN ID;
 
 	**Anatomical and Biomechanical Differences:** Women generally have wider pelvises and different knee alignments compared to men, which can affect joint mechanics and increase the risk of OA.
 
+Common Diagnosis in Age Group(Female)               |        Common Diagnosis in Age Group(Male) 
+:--------------------------------------------------:|:--------------------------------------------:
+![](diagnosis_pre_in_F.png)                         |         ![](diagnosis_pre_in_M.png)
+
 - **The most common diagnosis in Female are**:
 	- **Liveborn** : this diagnosis that commonly affect both male and female is the top most common diagnosis in female, with it procedure as no procedure is has an APR Severity of 81% minor this is due to the fact its a non surgrical operation and very likely associated with extreme case of about 0.70%
    - **Mood Disorder**: This is the second most common diagnosis in females it has the highest moderate APR Severity case of 59.42% and minor cases of 34.61%
@@ -88,7 +92,10 @@ DROP COLUMN ID;
       
         **Post-Surgical Infections** -> Females undergoing procedures like C-sections, hysterectomies, or other gynecological surgeries are at risk of developing 					postoperative infections that can lead to sepsis
    - **Osteoarthritis (OA)**: Common among women within the age 50-69 is the fifth most common diagnosis among female despite its prevelancy within 50-69 age group is has a moderate APR Severity risk of 54.81% and the lowest extreme cases of 0.43%.
-     
+
+**Common Diagnosis in Females**
+![](comon_dia_F.png)
+
 - **The most common diagnosis in Male are**:
 	- **Liveborn** : this is the top most common diagnosis in male, with it procedure as Circumcision is has an APR Severity of 79.08% minor this is due to it less several 	  surgrical operation it has the lowest extreme risk case of about 0.89%
    - **Mood Disorder**: This is the second most common diagnosis in males just like females it has the highest moderate APR Severity case of 58.31% and and a relatively low 	 extreme risk cases of 1.06%
@@ -96,10 +103,22 @@ DROP COLUMN ID;
    - **Congestive Heart Failure.**: Closly related to Coronary Atherosclerosis It is a chronic condition where the heart is unable to pump blood effectively, leading to a 		 buildup of fluid in the body it is the forth most common disgnosis in males it has the highest Major APR Severity risk case of 47.78% and the hihest extreme cases in 		 males of 10.74% this is due to it seveal health complication
    - **Alcohol related disorder**: The most prevelant diagnosis among age 30-49 is the fifth most common diagnosis in males is has a very moderate APR Severity risk case of 	 53.06% this severity is no brainer because it is mainly a social issue than clinical and due to its common procedure is detox this common  diagnosis as a relatively 		 lowextreme case of 1.28%
 
+**Common Diagnosis in Females**
+![](common_dia_M.png)
 
 - **Emergency** type of Admission is the Highest admission type of over **48K (56%)** medical cases as expected, it has the highest Emergency Department Indicator of **91.0%**  followed by **Trauma** which is the lowest type of admision but second highest EDI of over **82.0%** in both gender. **Newborn** admission type is the third most common **(24.9%)** and the most lowest EDI of about **0.05%** this distribution is followed by **Elective** admission type of about **1.95%** which is the second most common admission type **(7.29%)**
+
+Type of Admission and it EDI in (Female)            |    	Type of Admission and it EDI in (Male)
+:--------------------------------------------------:|:------------------------------------------------:
+![](add_type_F.png)                         		|         ![](add_type_M.png)
+
 - **The White Race** has the most extreme APR Motality risk due to its risk, they make up about 72% emergency cases and an average length of stay of 6. **The Black Race on the other hand has a relatively high APR Motality Risk of about 62.0% which makes up over 13% of emergency case which the **Other Race** Makes up the highest APR Minor Motality risk of about 68.0% which makes up the lowest emergency cases of about 12% in both genders.
-- Nassau, Suffolk, Westchester and Bronx are the top 4 above average among top 10 hospital county by total charge. thery generate the highest total charges due to these reasons
+
+Type of Admission and it EDI in (Female)            |    	Type of Admission and it EDI in (Male)
+:--------------------------------------------------:|:------------------------------------------------:
+![](race_F.png)                         		|         ![]race_M.png)
+
+- **Nassau, Suffolk, Westchester and Bronx** are the top 4 above average among top 10 hospital county by total charge. thery generate the highest total charges due to these reasons
   	- **Population Size & Urbanization**
   	  The top 10 county are located at the urban and sub urban areas of the united state this account for more hospiatal visit. More people = more hospital visits = more 		  total charges. eg.Bronx has a high population density, leading to more ER visits, inpatient admissions, and chronic disease management.
   	  
@@ -112,8 +131,22 @@ DROP COLUMN ID;
 
     - **Prevalence of Chronic Illness**
       Counties like the Bronx have higher rates of diabetes, hypertension, asthma, and heart disease, increasing hospital admissions and costs.
-- **No Procedure, Resp intube/mech ventil** generate the highest total charges for both gender of over 1.2B 
+
+Type of Admission and it EDI in (Female)            |    	Type of Admission and it EDI in (Male)
+:--------------------------------------------------:|:------------------------------------------------:
+![](county_F.png)                         		|         ![](county_M.png)
+
+- **No Procedure, Resp intube/mech ventil** generate the highest total charges for both gender of over 1.2B
+
+Type of Admission and it EDI in (Female)            |    	Type of Admission and it EDI in (Male)
+:--------------------------------------------------:|:------------------------------------------------:
+![](procedure_F.png)                         		|         ![](procedure_M.png)
+
 - **Medicare and Insurace** are the payment source above avg that generate the total charge reimburstment of over 4.8B among the top 5 source of payment by total charges
+
+Type of Admission and it EDI in (Female)            |    	Type of Admission and it EDI in (Male)
+:--------------------------------------------------:|:------------------------------------------------:
+![](add_type_F.png)                         		|         ![](add_type_M.png)
 
   ### Data Visualization
   The visualized Hospital Inpatient Discharges transforms raw patient records into clear, actionable insights using well-structured charts and interactive dashboards. Age groups, gender distribution, diagnoses, and procedures were visualized to highlight the most influential patterns in healthcare utilization. Bar charts and frequency plots were used to compare the top diagnosis categories across age brackets, revealing sharp diagnostic between pediatric, reproductive-age, and older adult populations. Procedure charts were paired with diagnosis visuals to show how clinical actions align with underlying medical conditions, offering a complete view of treatment pathways.
@@ -122,13 +155,13 @@ A gender filter examined the relationship between gender and diagnosis prevalenc
 All charts were designed to support diagnostic pattern recognition, guide interpretation, and help healthcare professionals quickly identify where clinical resources are most heavily utilized. The visualizations collectively create a coherent narrative that connects demographic trends, diagnosis frequencies, and procedure patterns in a way that is accessible, evidence-driven, and easy to communicate across both technical and clinical teams.
 
 **Hospital Inpatient Discharges Dashboard Dark Theme**
-![](Sales_Dashboard.png)
+![](viz_dark.png)
 
 **Hospital Inpatient Discharges Dashboard Light Theme**
-![](Sales_Dashboard.png)
+![](viz_light.png)
 
 **To interacte with the Iowa Liquor Dashboard**
 [Click Here](https://app.powerbi.com/groups/me/reports/e624959d-f081-4204-8e99-48c7e5e7488a/8e1f17ee9c5d7d87a5d8?experience=power-bi)
 
 ### Video Of This Project
-### [▶️ Watch Project Video on LinkedIn](https://www.linkedin.com/posts/victoryazubike_dataanalytics-dataprojects-datascience-activity-7355972871690633217-JMqm)
+### [▶️ Watch Project Video on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7324411567016427520)
